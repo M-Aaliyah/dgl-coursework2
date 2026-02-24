@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'dgl_notebook.ipynb'
+  workflow_dispatch:
 
 permissions:
   contents: write
