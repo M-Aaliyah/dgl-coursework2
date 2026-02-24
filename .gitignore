@@ -1,0 +1,8 @@
+# .gitignore
+.venv/
+__pycache__/
+data/
+*.png
+predictions_fold_*.csv
+submission.csv
+.DS_Store
