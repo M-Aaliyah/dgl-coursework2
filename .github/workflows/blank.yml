@@ -25,7 +25,7 @@ jobs:
       env:
         KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
         KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-      run: kaggle kernels pull aaliyahmer/notebook -p .
+      run: kaggle kernels pull aaliyahmer/dgl-notebook -p .
 
     - name: Commit and push changes
       run: |
