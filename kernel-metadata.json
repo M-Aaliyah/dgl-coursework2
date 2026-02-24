@@ -8,6 +8,9 @@
   "enable_gpu": "false",
   "enable_internet": "true",
   "competition_sources": [],
-  "dataset_sources": [],
+  "dataset_sources": [
+    "guibmc/dgl-data",
+    "guibmc/matrixvectorizer"
+  ],
   "kernel_sources": []
 }
