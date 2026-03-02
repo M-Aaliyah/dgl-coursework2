@@ -1,4 +1,4 @@
-# DGL2024 Brain Graph Super-Resolution Challenge
+# DGL2026 Brain Graph Super-Resolution Challenge
 
 ## Contributors
 
