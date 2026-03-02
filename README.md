@@ -45,7 +45,31 @@ The main challenges include:
 
 ## Used External Libraries
 
-- Give instructions on how to install the external libraries if you have used any in your code.
+All required dependencies are listed in the provided `requirements.txt` file.
+
+### Installation
+
+We recommend creating a virtual environment before installing the dependencies.
+
+#### 1. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+#### 2. Activate the virtual environment
+On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+On Windows:
+```bash
+venv\Scripts\activate
+```
+#### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+After installation, the environment is ready to run the project.
 
 ## Results
 
