@@ -7,7 +7,7 @@
   "is_private": "true",
   "enable_gpu": "true",
   "enable_internet": "true",
-  "competition_sources": [],
+  "competition_sources": ["dgl-2026-brain-graph-super-resolution-challenge"],
   "dataset_sources": [
     "guibmc/dgl-data",
     "guibmc/matrixvectorizer"
