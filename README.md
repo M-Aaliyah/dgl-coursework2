@@ -37,9 +37,9 @@ The main challenges include:
 - Accurately predicting HR edge weights from LR connectivity patterns
 - Maintaining meaningful graph structure under the evaluation measures (e.g. centralities and distributional metrics)
 
-## Name of your model - Methodology
+## DEFEND-SR — Methodology
 
-- Summarize in a few sentences the building blocks of your generative GNN model.
+DEFEND-SR extends the DEFEND framework for brain graph super-resolution. It predicts HR edge weights using two parallel low-rank linear branches: one operating directly on the flattened LR edge vector, and another on SGC-precomputed features that capture 2-hop neighbourhood structure. These branches are blended via a learnable sigmoid gate. The initial prediction is then refined by an EfficientLineGraphConv module, which performs message passing in the line graph (dual) space using scatter operations instead of materialising the full ~19M-edge dual graph. The model is trained with a composite loss combining L1 reconstruction and a topology-aware degree-distribution penalty to preserve hub structure.
 
 - Figure of your model.
 
@@ -75,8 +75,8 @@ After installation, the environment is ready to run the project.
 
 <img width="1389" height="985" alt="image" src="https://github.com/user-attachments/assets/0a137cb5-da0f-43b2-9553-1ab59bda1b14" />
 
-
-
 ## References
 
-- Do not forget to include the references to methods you used to build your model.
+- Pala, Singh & Rekik, "Rethinking graph super-resolution: Dual frameworks for topological fidelity," *arXiv preprint arXiv:2511.08853*, 2025.
+- Singh & Rekik, "Strongly topology-preserving GNNs for brain graph super-resolution," *Predictive Intelligence in Medicine (PRIME 2024)*, LNCS vol. 15155, Springer, 2025, pp. 124–135.
+- Wu, Souza, Zhang, Fifty, Yu & Weinberger, "Simplifying graph convolutional networks," *Proc. 36th Int. Conf. Machine Learning (ICML)*, PMLR, 2019, pp. 6861–6871.
