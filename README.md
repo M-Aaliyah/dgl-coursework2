@@ -41,7 +41,11 @@ The main challenges include:
 
 DEFEND-SR extends the DEFEND framework for brain graph super-resolution. It predicts HR edge weights using two parallel low-rank linear branches: one operating directly on the flattened LR edge vector, and another on SGC-precomputed features that capture 2-hop neighbourhood structure. These branches are blended via a learnable sigmoid gate. The initial prediction is then refined by an EfficientLineGraphConv module, which performs message passing in the line graph (dual) space using scatter operations instead of materialising the full ~19M-edge dual graph. The model is trained with a composite loss combining L1 reconstruction and a topology-aware degree-distribution penalty to preserve hub structure.
 
-- Figure of your model.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3304d5c0-0015-4a7e-8bd3-a0e414266bf2"
+       alt="DEFEND-SR architecture"
+       style="max-width: 60%; height: auto;" />
+</p>
 
 ## Used External Libraries
 
@@ -73,10 +77,20 @@ After installation, the environment is ready to run the project.
 
 ## Results
 
-<img width="1389" height="985" alt="image" src="https://github.com/user-attachments/assets/0a137cb5-da0f-43b2-9553-1ab59bda1b14" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0a137cb5-da0f-43b2-9553-1ab59bda1b14"
+       alt="Cross-validation results"
+       style="max-width: 90%; height: auto;" />
+</p>
 
 ## References
 
-- Pala, Singh & Rekik, "Rethinking graph super-resolution: Dual frameworks for topological fidelity," *arXiv preprint arXiv:2511.08853*, 2025.
-- Singh & Rekik, "Strongly topology-preserving GNNs for brain graph super-resolution," *Predictive Intelligence in Medicine (PRIME 2024)*, LNCS vol. 15155, Springer, 2025, pp. 124–135.
-- Wu, Souza, Zhang, Fifty, Yu & Weinberger, "Simplifying graph convolutional networks," *Proc. 36th Int. Conf. Machine Learning (ICML)*, PMLR, 2019, pp. 6861–6871.
+## References
+
+1. Isallari & Rekik, "Brain graph super-resolution using adversarial graph neural network with application to functional brain connectivity," *Medical Image Analysis*, vol. 71, 2021.
+2. Singh & Rekik, "Strongly topology-preserving GNNs for brain graph super-resolution," *PRIME 2024*, LNCS vol. 15155, Springer, 2025, pp. 124–135. 
+3. Pala, Singh & Rekik, "Rethinking graph super-resolution: Dual frameworks for topological fidelity," *arXiv:2511.08853*, 2025.
+4. Wu, Souza, Zhang, Fifty, Yu & Weinberger, "Simplifying graph convolutional networks," *ICML*, PMLR, 2019, pp. 6861–6871.
+5. Singh, Arya & Rekik, "Diffusion-based graph super-resolution with application to connectomics," *PRIME 2023*, LNCS vol. 14277, Springer, 2023, pp. 96–107. 
+6. Chanpuriya & Musco, "Simplified graph convolution with heterophily," *arXiv:2202.04139*, 2022. 
+7. Raghu, Poole, Kleinberg, Ganguli & Sohl-Dickstein, "On the expressive power of deep neural networks," *arXiv:1606.05336*, 2017.
