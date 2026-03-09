@@ -1,0 +1,84 @@
+=== Job started at Sun  8 Mar 17:22:06 GMT 2026 ===
+Node: vm-he-a100.doc.ic.ac.uk
+Job ID: 223601
+CUDA available — using GPU.
+LR Train : (167, 12720)
+HR Train : (167, 35778)
+LR Test  : (112, 12720)
+
+SGC Baseline Config:
+  K=2, lr=0.001, epochs=300, patience=15, batch_size=16
+  Input dim: 25600 (flattened S^K·X)
+  Output dim: 35778
+
+Precomputing SGC features for all training samples...
+  SGC features shape: (167, 25600)
+
+============================================================
+FOLD 1/3  (train: 111, test: 56)
+============================================================
+  SGC params: 915,952,578
+  Epoch   1/300 | Loss: 0.466611 | Best: 0.466611 | Patience: 0/15
+  Early stopping at epoch 16
+
+  Fold 1 Results (1102.7s):
+    MAE: 0.512809
+    PCC: 0.232527
+    JSD: 0.430913
+    MAE_PC: 0.000609
+    MAE_EC: 0.014727
+    MAE_BC: 0.014660
+    MAE_CC: 0.117997
+    MAE_Clust: 0.414117
+
+============================================================
+FOLD 2/3  (train: 111, test: 56)
+============================================================
+  Epoch   1/300 | Loss: 0.480582 | Best: 0.480582 | Patience: 0/15
+  Early stopping at epoch 16
+
+  Fold 2 Results (1123.0s):
+    MAE: 0.532635
+    PCC: 0.194690
+    JSD: 0.433269
+    MAE_PC: 0.000616
+    MAE_EC: 0.015304
+    MAE_BC: 0.015261
+    MAE_CC: 0.103622
+    MAE_Clust: 0.430092
+
+============================================================
+FOLD 3/3  (train: 112, test: 55)
+============================================================
+  Epoch   1/300 | Loss: 0.462290 | Best: 0.462290 | Patience: 0/15
+  Early stopping at epoch 16
+
+  Fold 3 Results (1066.9s):
+    MAE: 0.510590
+    PCC: 0.225375
+    JSD: 0.433992
+    MAE_PC: 0.000615
+    MAE_EC: 0.014359
+    MAE_BC: 0.014964
+    MAE_CC: 0.119344
+    MAE_Clust: 0.404109
+
+Total 3-fold CV time: 3293.2s (54.9 min)
+RAM usage: 1353 MB
+
+======================================================================
+SGC BASELINE — Average ± Std Across 3 Folds
+======================================================================
+  MAE         : 0.518678 ± 0.009911
+  PCC         : 0.217531 ± 0.016413
+  JSD         : 0.432725 ± 0.001314
+  MAE(PC)     : 0.000613 ± 0.000003
+  MAE(EC)     : 0.014797 ± 0.000389
+  MAE(BC)     : 0.014962 ± 0.000246
+  MAE(CC)     : 0.113654 ± 0.007115
+  MAE(Clust)  : 0.416106 ± 0.010700
+Saved cv_barplots_sgc.png
+Saved sgc_results.txt
+
+Done.
+=== Job finished at Sun  8 Mar 18:17:27 GMT 2026 ===
