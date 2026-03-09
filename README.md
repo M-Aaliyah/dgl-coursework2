@@ -2,7 +2,7 @@
 
 ## Contributors
 
-**Team Name:** Giannis Kitsos  
+**Team Name:** Deep graph dawgs
 
 **Team Members:**
 - Giannis Kitsos  
