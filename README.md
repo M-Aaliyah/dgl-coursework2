@@ -85,8 +85,6 @@ After installation, the environment is ready to run the project.
 
 ## References
 
-## References
-
 1. Isallari & Rekik, "Brain graph super-resolution using adversarial graph neural network with application to functional brain connectivity," *Medical Image Analysis*, vol. 71, 2021.
 2. Singh & Rekik, "Strongly topology-preserving GNNs for brain graph super-resolution," *PRIME 2024*, LNCS vol. 15155, Springer, 2025, pp. 124–135. 
 3. Pala, Singh & Rekik, "Rethinking graph super-resolution: Dual frameworks for topological fidelity," *arXiv:2511.08853*, 2025.
