@@ -73,7 +73,8 @@ After installation, the environment is ready to run the project.
 
 ## Results
 
-- Insert your bar plots.
+<img width="1389" height="985" alt="image" src="https://github.com/user-attachments/assets/0a137cb5-da0f-43b2-9553-1ab59bda1b14" />
+
 
 
 ## References
